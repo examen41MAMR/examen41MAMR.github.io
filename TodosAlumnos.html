@@ -5,58 +5,81 @@
   <meta name="viewport"
     content="width=device-width,
        initial-scale=1.0">
-  <title>Alumnos a agregar</title>
+  <title>
+    Agregar Alumno
+  </title>
   <script
-    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js">
-    </script>
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
   <script
-    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js">
-    </script>
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
   <script
-    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js">
-    </script>
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
   <script src="js/init.js">
   </script>
   
   <script type="module"
     src="cmp/mi-footer.js">
     </script>
-  
   <link rel="stylesheet"
     href="css/estilos.css">
 </head>
 <body>
-  <mi-nav></mi-nav>
-  <p>
-    Todos los alumnos
-  </p>
-  <p class="IMAGEN">
-    <img src="imagenes/alumni.png"  >
-   
-</p>
-  <header>
-    <h1>Alumnos</h1>
-    <div class="herramientas">
-      <a
-        href="alumnoNuevo.html">
-        Agregar…</a>
-    </div>
-  </header>
-  <ul id="lista" class="lista">
-    <li>
-      <avance>
-      </avance>
-    </li>
-  </ul>
-  <mi-footer></mi-footer>
+  <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1> Ingresar Alumno Nuevo</h1>
+      <div class="herramientas">
+        <a
+          href="Todosalumnos.html">
+          Cancelar</a>
+        <button type="submit">
+          Guardar
+        </button>
+      </div>
+    </header>
+    <p>
+      <label>
+        Matricula
+        <input name="matricula"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <input name="nombre"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Telefono
+        <input name="telefono"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Grupo
+        <input name="grupo"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        fecha
+        <input name="fecha"
+          type="text" required>
+      </label>
+    </p>
+    <mi-footer></mi-footer>
+  </form>
   <p>
     &copy; 2021,Marco Antonio Morales Rios
   </p>
   <script type="module"
-    src="js/CtrlTodosAlumnos.js">
-    </script>
-    <script type="module"
-    src="js/avance.js">
+    src="js/CtrlAgregarAlumno.js">
     </script>
 </body>
 </html>
+

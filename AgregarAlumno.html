@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <title>La Sesión</title>
+  
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js">
+    </script>
+  
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js">
+    </script>
+  
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js">
+    </script>
+
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="js/mi-footer.js">
+    </script>
+  <script type="module"
+    src="js/avance.js">
+    </script>
+  <link rel="stylesheet"
+    href="css/estilos.css">
+</head>
+<body>
+  <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1>Sesión Iniciada</h1>
+        <button
+          type="button"
+          name="terminarSesión">
+          Terminar Sesión
+        </button>
+      </div>
+    </header>
+    <p>
+      <label>
+        Email
+        <output name="email">
+          <avance>
+          </avance>
+        </output>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <output name="nombre">
+          <avance>
+          </avance>
+        </output>
+      </label>
+    </p>
+    <mi-footer></mi-footer>
+    <div class="herramientas">
+      <a
+        href="alumnoNuevo.html">
+      ver alumnos</a>
+    </div>
+    <div class="herramientas">
+      <a
+        href="chat.html">
+        chatear</a>
+    </div>
+    <p>
+      &copy; 2021,Marco Antonio Morales Rios
+    </p>
+  </form>
+  <script type="module"
+    src="js/Sesion.js">
+    </script>
+</body>
+</html>
